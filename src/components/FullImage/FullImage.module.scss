@@ -1,10 +1,21 @@
 .img {
     width: 100%;
+    height: 590px;
+    position: relative;
     img {
+        top: 0;
+        z-index: 5;
+        position: absolute;
+        height: 100%;
         width: 100%;
         object-fit: cover;
+        object-position: center;
+        @media screen and (max-width:365px){
+            object-position: left;
+        }
     }
 }
 .fullimage {
     margin-top: 160px;
+    position: relative;
 }
