@@ -1,0 +1,49 @@
+.mobileheader {
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 0px;
+    background-color: white;
+}
+.containermob {
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    background-color: white;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    .line1 {
+        border-radius: 2px;
+        width: 41px;
+        height: 4px;
+        background-color: #6B5AF9;
+    }
+    .line2{
+        border-radius: 2px;
+        width: 27px;
+        height: 4px;
+        background-color: #6B5AF9;
+    }
+    .line3{
+        border-radius: 2px;
+        width: 15px;
+        height: 4px;
+        background-color: #6B5AF9;
+    }
+    .lineGreen {
+        border-radius: 2px;
+        width: 41px;
+        height: 4px;
+        background-color: #43CD93;
+    }
+}
+
+.active {
+    z-index: 100;
+    box-shadow: 0 2px 4px lightgray;
+}

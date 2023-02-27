@@ -1,0 +1,32 @@
+.stages {
+    margin-top: 160px;
+}
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 43px;
+}
+.stages_container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.map {
+    height: 100%;
+    padding-top: 43px;
+    position: sticky;
+    top: 150px;
+    z-index: 50;
+    .step_map {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 23px;
+        padding-left: 26px;
+    }
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}

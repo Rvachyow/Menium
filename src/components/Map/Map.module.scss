@@ -1,0 +1,39 @@
+.round {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #BDBDBD;
+    border-radius: 50%;
+    background-color: #BDBDBD;
+    position: relative;
+}
+.map {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    cursor: pointer;
+    .text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+.map:last-child:after{
+    display: none;
+}
+.map:after {
+    content: "";
+    position: absolute;
+    left: 36px;
+    height: 55px;
+    width: 5px;
+    background: #bdbdbd;
+    transform: translateY(72%)
+   }
+.active {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #6B5AF9;
+    border-radius: 50%;
+    background-color: #6B5AF9;
+    position: relative;
+}

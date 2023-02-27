@@ -1,7 +1,13 @@
 import style from "./Header.module.scss";
 import { Container } from "../Container/Container";
 import { BlueButton } from "../BlueButton/BlueButton";
+import useWindowSize from "../../hook/useWindowSize";
+import { Mobileheader } from "../mobile/Mobileheader/Mobileheader";
 export const Header = () => {
+  const size = useWindowSize();
+  if (size.width <= 768) {
+    return <Mobileheader/>;
+  }
   return <div className={style.header}>
     <Container>
       <div className={style.items}>
