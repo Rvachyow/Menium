@@ -4,6 +4,9 @@
 .content {
     display: flex;
     align-items: center;
+    @media screen and (max-width:500px){
+        flex-direction: column;
+    }
 }
 .item {
     flex: 0 1 50%;

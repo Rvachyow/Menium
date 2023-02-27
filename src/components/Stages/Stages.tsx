@@ -6,21 +6,22 @@ import { Step } from "../Step/Step";
 import React from "react";
 import {STEP_ITEM} from "../Step/const";
 import { useParams } from "react-router-dom";
+import useWindowSize from "../../hook/useWindowSize";
 
 export const Stages = () => {
   const param = useParams();
-  
+  const size = useWindowSize();
   const [ active, setActive ] = React.useState(param.id);
   return <div className={style.stages}>
     <Container>
       <div className={style.title}>Этапы</div>
       <div className={style.stages_container}>
-        <div className={style.map}>
+        {size.width <= 768? "" : <div className={style.map}>
           <div className={style.step_map}>
             {MAP_ITEM?.map(item => <Map key={item.id} path={item.path} 
               target={setActive} active={active === item.path} text={item.text}></Map>)}
           </div>
-        </div>
+        </div>}
         <div className={style.steps}>
           {STEP_ITEM?.map(item => <Step setActive={setActive} key={item.number} {...item}></Step>)}
         </div>

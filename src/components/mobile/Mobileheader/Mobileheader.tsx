@@ -31,6 +31,6 @@ export const Mobileheader = () => {
         </div>
       </div>
     </Container>
-    {active? <MenuBurger/> : ""}
+    {active? <MenuBurger handleActive={handleActive}/> : ""}
   </div>;
 };

@@ -8,6 +8,10 @@
         flex-direction: column;
         align-items: center;
         gap: 26px;
+        @media screen and (max-width: 479px) {
+        
+            gap: 12px;
+        }
     }
 }
 .title {
@@ -17,17 +21,27 @@
     width: 100%;
     font-size: 24px;
     font-weight: 700;
-    gap: 40px;
     padding-left: 50px;
+    gap: 15px;
+    @media screen and (max-width: 479px) {
+        
+        padding-left: 0px;
+    }
+    @media screen and (max-width: 360px) {
+        font-size: 12px;
+        line-height: 14.63px;
+        padding-left: 0px;
+    }
     .number {
         background-color: #43CD93;
-        width: 53px;
-        height: 53px;
+        min-width: 53px;
+        min-height: 53px;
         border-radius: 50%;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     p{
          color: white;
@@ -44,5 +58,11 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media screen and (max-width: 360px) {
+        font-size: 12px;
+        line-height: 14.63px;
+        gap: 10px;
+      
+    }
 
 }

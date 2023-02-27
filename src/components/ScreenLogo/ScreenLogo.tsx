@@ -10,7 +10,7 @@ export const ScreenLogo = () => {
       <div className={style.block}>
         <div className={style.text}>
           <div className={style.toptext}>
-            <div ref={refDiv} className={style.title}>Разработка интернет-магазинов <br /> <span>на 1C-Битрикс</span></div>
+            <div ref={refDiv} className={style.title}>Разработка интернет-магазинов <span>на 1C-Битрикс</span></div>
             <div className={style.topAbout}>
             Разработаем интернет-магазин за 30 дней с уникальным дизайном и <br /> 
             продуманной структурой который <span>выделит вас на фоне конкурентов</span>

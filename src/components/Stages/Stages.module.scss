@@ -9,7 +9,7 @@
 .stages_container {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    
 }
 .map {
     height: 100%;
@@ -17,6 +17,7 @@
     position: sticky;
     top: 150px;
     z-index: 50;
+    flex: 0 1 50%;
     .step_map {
         display: flex;
         flex-direction: column;
@@ -27,6 +28,11 @@
 }
 .steps {
     display: flex;
+    flex: 0 1 50%;
     flex-direction: column;
     gap: 55px;
+    width: 370px;
+    @media screen and (max-width:768px) {
+        flex: 1 1 100%;
+    }
 }

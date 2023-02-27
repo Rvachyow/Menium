@@ -1,5 +1,5 @@
 .internetshop {
-    margin: 100px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     .container_iternetshop {
         display: flex;
         flex-direction: column;
@@ -32,6 +32,14 @@
         padding: 7px 16px 39px 16px;
         border-radius: 10px;
         box-shadow: 0px 0px 30px 0px #00000026;
+        @media screen and (max-width:768px) {
+            flex: 0 1 50%;
+            margin: 10px -10px;
+          }
+        @media screen and (max-width:479px) {
+            flex: 1 0 100%;
+            margin: 10px -10px;
+          }
         .block_number {
             p {
             font-size: 64px;

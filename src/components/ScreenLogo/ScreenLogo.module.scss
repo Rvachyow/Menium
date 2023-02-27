@@ -1,23 +1,7 @@
 .screenlogo {
     padding-bottom: 100px;
 }
-.background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateY(-7rem);
-    object-fit: cover;
-    .bg {
-        z-index: 3;
-        object-fit: cover;
-    }
-}
-.pc {
-    position: absolute;
-    z-index: 4;
-    object-fit: cover;
-    transform: translateY(6rem);
-}
+
 .text {
     display: flex;
     flex-direction: column;
@@ -37,6 +21,12 @@
             font-weight: 700;
             font-size: 36px;
             line-height: 43px;
+            max-width: 653px;
+            @media screen and (max-width:768px) {
+                font-size: 24px;
+                line-height: 29px;
+            
+              }
             span {
                 color: #6B5AF9;
             }
@@ -45,7 +35,10 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
-
+            @media screen and (max-width:768px) {
+                max-width: 320px;
+                font-weight: 600;
+              }
         }
         
     }
@@ -58,8 +51,14 @@
             font-weight: 600;
             font-size: 12px;
             line-height: 16px;
+            @media screen and (max-width:768px) {
+                max-width: 320px;
+                font-weight: 600;
+              }
+        
             :first-child {
                 color: #6B5AF9;
+                
             }
         }
     }
@@ -69,4 +68,24 @@
     left: 50%;
     transform: translateY(5rem);
     cursor: pointer;
+}
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-7rem);
+    object-fit: cover;
+    .bg {
+        z-index: 3;
+        object-fit: cover;
+    }
+    @media screen and (max-width:768px) {
+        opacity: 0.5;
+      }
+}
+.pc {
+    position: absolute;
+    z-index: 4;
+    object-fit: cover;
+    transform: translateY(6rem);
 }
