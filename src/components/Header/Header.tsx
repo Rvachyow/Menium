@@ -3,6 +3,9 @@ import { Container } from "../Container/Container";
 import { BlueButton } from "../BlueButton/BlueButton";
 import useWindowSize from "../../hook/useWindowSize";
 import { Mobileheader } from "../mobile/Mobileheader/Mobileheader";
+import { NAV_ITEM } from "../Navbar/const";
+import { Navbar } from "../Navbar/Navbar";
+
 export const Header = () => {
   const size = useWindowSize();
   if (size.width <= 768) {
@@ -16,15 +19,12 @@ export const Header = () => {
         </div>
         <nav className={style.navbar}>
           <ul className={style.navitems}>
-            <li>Главная</li>
-            <li>Цены</li>
-            <li>Кейсы и отзывы</li>
-            <li>Контакты</li>
+            {NAV_ITEM?.map((item, index) => <Navbar key={index} {...item}></Navbar>)}
           </ul>
         </nav>
         <div className={style.info}>
           <div className={style.socials}>
-            <img src="./assets/tele.png" alt="" />
+            <img className={style.huy} src="./assets/tele.png" alt="" />
             <img src="./assets/wha.png" alt="" />
             <div className={style.number}>+ 7 (495) 555 65 65</div>
           </div>

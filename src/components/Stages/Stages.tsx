@@ -4,7 +4,7 @@ import { Map } from "../Map/Map";
 import MAP_ITEM from "../Map/const.json";
 import { Step } from "../Step/Step";
 import React from "react";
-import {STEP_ITEM} from "../Step/const";
+import { STEP_ITEM } from "../Step/const";
 import { useParams } from "react-router-dom";
 import useWindowSize from "../../hook/useWindowSize";
 

@@ -27,8 +27,6 @@
     align-items: center;
     @media screen and (max-width:992px) {
         flex-direction: column;
-        
-        
     }
     .text_about {
         display: flex;
@@ -37,9 +35,7 @@
         gap: 30px;
         text-align: start;
         @media screen and (max-width:992px) {
-            text-align: center;
-            
-            
+            text-align: center;     
         }
     }
 }
