@@ -2,6 +2,8 @@ import style from "./MenuBurger.module.scss";
 import ReactDOM from "react-dom";
 import { Container } from "../../Container/Container";
 import React from "react";
+import { NAV_ITEM } from "../../Navbar/const";
+import { ItemMenu } from "./ItemMenu";
 
 const portal = document.getElementById("portal");
 
@@ -16,10 +18,7 @@ export const MenuBurger = ({ handleActive }:{handleActive: any}) =>
           </div>
           <nav className={style.navbar}>
             <ul className={style.navitems}>
-              <li>Главная</li>
-              <li>Цены</li>
-              <li>Кейсы и отзывы</li>
-              <li>Контакты</li>
+              {NAV_ITEM?.map((item,index) => <ItemMenu handleActive={handleActive} key={index} {...item}></ItemMenu>)}
             </ul>
             <div className={style.info}>
               <p>info@millenium.ru</p>
