@@ -31,6 +31,7 @@
     -webkit-box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
     -moz-box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
     box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
+    user-select: none;
     @media screen and (max-width:360px) {
         opacity: 0.5;
     }
@@ -51,6 +52,7 @@
     -webkit-box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
     -moz-box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
     box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
+    user-select: none;
     @media screen and (max-width:360px) {
         opacity: 0.5;
         

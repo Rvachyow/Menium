@@ -1,0 +1,42 @@
+.title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+}
+.contacts {
+    flex: 1 0 auto;
+    margin-top: 77px
+}
+.body {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:850px) {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: #727272;
+        font-size: 18px;
+        font-weight: 700;
+        list-style: 21px;
+        .nubmer {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+        }
+    }
+}
+.map {
+    width: 600px;
+    height: 500px;
+    @media screen and (max-width:630px) {
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+    }
+}
