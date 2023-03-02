@@ -25,6 +25,9 @@
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+        @media screen and (max-width:500px){
+            top: 20%;
+        }
     }
 }
 
@@ -52,7 +55,6 @@
         animation: load2 4s ease-in-out infinite;
     }
 }
-
 @keyframes load2 {
     0% {
         opacity: 1;
