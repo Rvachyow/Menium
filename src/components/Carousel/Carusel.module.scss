@@ -1,8 +1,6 @@
 .items_carusel {
     display: flex;
     width: 100%;
-    
-    
 }
 .carusel {
     width: 100%;
@@ -27,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 11;
+    z-index: 16;
     -webkit-box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
     -moz-box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
     box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
@@ -48,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 11;
+    z-index: 16;
     -webkit-box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
     -moz-box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
     box-shadow: 4px 15px 61px 5px rgba(34, 60, 80, 0.53);
@@ -58,29 +56,26 @@
         
     }
 }
-.first {
-   position: absolute;
-   z-index: 10;
-   left: 35%;
-   top: 25%;
-   max-width: 100%;
-   max-height: 100%;
-   @media screen and (max-width:768px){
-    display: none;
-   }
-}
-.second {
-    position: relative;
-    z-index: 11;
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    @media screen and (max-width:768px){
-        justify-content: center;
-       }
+.items_carusel {
+    .active{
+        position: relative;
+        z-index: 15;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transition: left 2s ease-out;
+        transition: opacity 1s ease;
+    }
+    .notactive {
+        z-index: 5;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        opacity: 0.5;
+        transition: left 2s ease-out;
+        @media screen and (max-width:768px) {
+            display: none;
+        }}
 }
 .triangle_left {
     width: 0;

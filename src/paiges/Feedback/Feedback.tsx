@@ -11,8 +11,6 @@ export const Feedback = () => {
         </div>
         <div className={style.carusel}>
           <Carusel>
-            <img src="./assets/Shot1.png" alt="" />
-            <img src="./assets/Shot2.png" alt="" />
           </Carusel>
         </div>
         <div className={style.about}>
